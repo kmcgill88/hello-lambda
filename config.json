@@ -1,0 +1,12 @@
+{
+  "lambda": {
+    "functionName": "hello-lambda",
+    "role": "arn:aws:iam::887430382797:role/lambda_basic_execution",
+    "timeout": 30,
+    "runtime": "nodejs4.3",
+    "handler": "index.handler"
+  },
+  "staging": {
+    "bucket": "xilution-staging"
+  }
+}

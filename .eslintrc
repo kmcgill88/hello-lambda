@@ -1,0 +1,37 @@
+{
+  "ecmaFeatures": {
+    "modules": true
+  },
+  "env": {
+    "browser": false,
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "eol-last": 2,
+    "curly": 2,
+    "complexity": 0,
+    "default-case": 2,
+    "consistent-return": 0,
+    "eqeqeq": 2,
+    "dot-location": 2,
+    "dot-notation": 2,
+    "no-alert": 2,
+    "no-caller": 2,
+    "no-case-declarations": 2,
+    "no-div-regex": 2,
+    "no-else-return": 0,
+    "max-len": [0, 240, 4],
+    "no-underscore-dangle": [0],
+    "no-var": 0,
+    "quotes": [
+      0,
+      "single"
+    ],
+    "space-before-function-paren": [2, {
+      "anonymous": "always",
+      "named": "never"
+    }],
+    "strict": [2, "global"]
+  }
+}

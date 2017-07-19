@@ -2,6 +2,7 @@
 
 module.exports = {
     PING_OPERATTION: 'ping',
+    SAY_HELLO_OPERATION: 'say-hello',
     ECHO_OPERATION: 'echo',
     BAD_REQUEST: '[Bad Request] ',
     UNAUTHORIZED: '[Unauthorized] ',

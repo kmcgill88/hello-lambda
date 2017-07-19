@@ -5,7 +5,7 @@ const index = require('./src/index');
 // *** Ping
 
 const event = {
-    operation: 'ping',
+    operation: 'hello-lambda',
 };
 
 index.handler(event, {}, (err, data) => {

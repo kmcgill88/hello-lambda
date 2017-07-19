@@ -79,6 +79,33 @@ describe('Index tests', () => {
         });
     });
 
+    describe('when operation is say hello', () => {
+        let sayHelloResponse;
+
+        beforeEach((done) => {
+            sayHelloResponse = chance.string();
+            event = {
+                operation: 'say-hello',
+            };
+
+            actions.sayHello.withArgs(sinon.match.func).yields(null, sayHelloResponse);
+
+            index.handler(event, context, (error, response) => {
+                actualError = error;
+                actualResponse = response;
+                done();
+            });
+        });
+
+        it('should not raise an error', () => {
+            expect(actualError).to.equal(null);
+        });
+
+        it('should yield data', () => {
+            expect(actualResponse).to.equal(sayHelloResponse);
+        });
+    });
+
     describe('when no operation', () => {
         beforeEach((done) => {
             event = {};

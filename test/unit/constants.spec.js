@@ -14,6 +14,10 @@ describe('Constants Tests', () => {
         expect(constants).to.have.property('ECHO_OPERATION').which.equals('echo');
     });
 
+    it('should have an say hello operation', () => {
+        expect(constants).to.have.property('SAY_HELLO_OPERATION').which.equals('say-hello');
+    });
+
     it('should have bad request property', () => {
         expect(constants).to.have.property('BAD_REQUEST').which.equals('[Bad Request] ');
     });
@@ -50,7 +54,7 @@ describe('Constants Tests', () => {
         expect(constants).to.have.property('SERVICE_UNAVAILABLE').which.equals('[Service Unavailable] ');
     });
 
-    it('should have 11 constants', () => {
-        expect(Object.keys(constants).length).to.equal(11);
+    it('should have 12 constants', () => {
+        expect(Object.keys(constants).length).to.equal(12);
     });
 });

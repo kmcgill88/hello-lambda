@@ -16,6 +16,8 @@ exports.handler = (event, context, callback) => {
 
     if (event.operation === constants.ECHO_OPERATION) {
         actions.echo(event.data, callback);
+    } else if (event.operation === constants.SAY_HELLO_OPERATION) {
+        actions.sayHello(callback);
     } else {
         callback(new Error(`${constants.BAD_REQUEST}An operation must be specified.`));
     }
